@@ -1,0 +1,33 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Node dependencies (ignores in root, frontend, and backend)
+**/node_modules/
+
+# Build outputs
+**/dist/
+**/dist-ssr/
+
+# Local environment secret variables
+**/.env
+.env.local
+.env.example
+.env.development.local
+.env.test.local
+.env.production.local
+*.local
+
+# Local database files
+**/db.json
+
+# Editor files
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,0 +1,5 @@
+{
+  "framework": "nodejs",
+  "buildCommand": "npm install",
+  "installCommand": "npm install"
+}
