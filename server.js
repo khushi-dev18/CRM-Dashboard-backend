@@ -56,7 +56,12 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 CRM Backend Server running at http://localhost:${PORT}`);
-  console.log(`👉 API Base Path: http://localhost:${PORT}/api`);
-});
+// Only listen locally, export for Vercel
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`🚀 CRM Backend Server running at http://localhost:${PORT}`);
+    console.log(`👉 API Base Path: http://localhost:${PORT}/api`);
+  });
+}
+
+export default app;
